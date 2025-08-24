@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact Us</title>
+  <style>
+    /* Contact Us Page Styles */
+    .contact-form,
+    .contact-info {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .contact-form h2,
+    .contact-info h2 {
+      margin-top: 0;
+      color: #001f4d;
+      text-align: center;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background-color: #d62828;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #b71c1c;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .contact-info a {
+      color: #d62828;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .map-container {
+      margin-top: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav>
+        <ul class="navbar">
+            <li><a href="index.html#">Home</a></li> <!--This page needs to redirect to the home page-->
+
+            <li>
+            <a href="#">Admissions</a>
+                <ul class="dropdown">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">How to apply</a></li>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Fees & SCholarships</a></li>
+                    <li><a href="#">Rules & Regulations</a></li>
+                </ul>
+            </li>
+    
+            <li>
+            <a href="#">Student Life</a>
+            <ul class="dropdown">
+                <li><a href="#">Campus</a></li>
+                <li><a href="#">Boarding Facilities</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Clubs and Societies</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+            </li>
+
+            <li>
+            <a href="#">Academics</a>
+            <ul class="dropdown">
+                <li><a href="#">Curriculum</a></li>
+                <li><a href="#">Class Programs</a></li>
+                <li><a href="#">Academic Departments</a></li>
+                <li><a href="#">Staff</a></li>
+            </ul>
+            <li>
+            <a href="#">Alumni</a>
+            <ul class="dropdown">
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">School Projects</a></li>
+                <li><a href="#">Alumni Network</a></li>
+                <li><a href="#">Alumni Events</a></li>
+                <li><a href="#">Support Us</a></li>
+            </ul>
+
+            <li><a href="Contact us.html">Contact us</a></li>
+        </ul>
+
+        </nav>
+
+  <header>Contact Us</header>
+
+  <main>
+    <form class="contact-form" action="#" method="post">
+      <h2>Get in Touch</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Our Contact Info</h2>
+      <p><strong>Phone:</strong> +268 2404 2591, +268 2404 5133</p>
+      <p><strong>Email:</strong> <a href="mailto:info@stmarkshighschool.ac.sz">info@stmarkshighschool.ac.sz</a></p>
+      <p><strong>Address:</strong> Mbovane St, Mbabane, Eswatini</p>
+      
+      <!-- Google Map Embed -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1788.1539453408086!2d31.138469676453944!3d-26.316527943416204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8cee26182dd35%3A0xe94a89fd179625c5!2sSt%20Marks%20High!5e0!3m2!1sen!2sza!4v1756021700356!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <p><strong>Follow us:</strong></p>
+      <p>
+        <a href="https://facebook.com/yourcompany" target="_blank">Facebook</a> | 
+        <a href="https://twitter.com/yourcompany" target="_blank">Twitter</a> | 
+        <a href="https://instagram.com/yourcompany" target="_blank">Instagram</a> | 
+        <a href="https://linkedin.com/company/yourcompany" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Company. All rights reserved.
+  </footer>
+
+</body>
+</html>

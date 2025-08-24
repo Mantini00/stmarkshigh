@@ -1,0 +1,80 @@
+<!Doctype html>
+<html lang ="en">
+    <head>
+        <title>Home :: St Mark's High School</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+<!-- <header> Welcome to St Mark's High School</header>-->
+    
+        <nav>
+        <ul class="navbar">
+            <li><a href="index.html#">Home</a></li> <!--This page needs to redirect to the home page-->
+
+            <li>
+            <a href="#">Admissions</a>
+                <ul class="dropdown">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">How to apply</a></li>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Fees & SCholarships</a></li>
+                    <li><a href="#">Rules & Regulations</a></li>
+                </ul>
+            </li>
+    
+            <li>
+            <a href="#">Student Life</a>
+            <ul class="dropdown">
+                <li><a href="#">Campus</a></li>
+                <li><a href="#">Boarding Facilities</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Clubs and Societies</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+            </li>
+
+            <li>
+            <a href="#">Academics</a>
+            <ul class="dropdown">
+                <li><a href="#">Curriculum</a></li>
+                <li><a href="#">Class Programs</a></li>
+                <li><a href="#">Academic Departments</a></li>
+                <li><a href="#">Staff</a></li>
+            </ul>
+            <li>
+            <a href="#">Alumni</a>
+            <ul class="dropdown">
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">School Projects</a></li>
+                <li><a href="#">Alumni Network</a></li>
+                <li><a href="#">Alumni Events</a></li>
+                <li><a href="#">Support Us</a></li>
+            </ul>
+
+            <li><a href="C:\Users\mnhla\OneDrive - University of South Africa\stmarkshigh\Contact us.html">Contact us</a></li>
+        </ul>
+
+        </nav>
+    <h1>St Mark's High School</h1>
+    <p>This is the first version of my website</p>
+
+  <!-- This is how you make the date on the footer update automaticaly -->  
+    <footer>
+        &copy;<span id="current-year"></span> St Mark's High School - All rights reserved.
+    </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const yearSpan = document.getElementById("current-year");
+        if (yearSpan) { // Check if the element exists to prevent errors
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    });
+</script>
+</body>
+</html>
